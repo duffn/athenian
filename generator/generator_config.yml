@@ -7,4 +7,3 @@ additionalProperties:
   gemName: athenian
   gemSummary: A library for working with the Athenian API.
   moduleName: Athenian
-enablePostProcessFile: true
