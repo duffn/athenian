@@ -10,6 +10,7 @@
 | **updated** | **Time** | When this issue was last updated. |  |
 | **work_began** | **Time** | When the issue entered the \&quot;In Progress\&quot; stage or received a PR. This timestamp can be missing and is always less than or equal to &#x60;resolved&#x60;. | [optional] |
 | **resolved** | **Time** | When the issue finished: the stage is \&quot;Done\&quot; and all PRs are either released or rejected. This timestamp can be missing and is always greater than or equal to &#x60;work_began&#x60;. | [optional] |
+| **acknowledge_time** | **Object** |  |  |
 | **lead_time** | **Object** |  | [optional] |
 | **life_time** | **Object** |  |  |
 | **reporter** | **String** | Name of the person who reported the issue. |  |
@@ -38,6 +39,7 @@ instance = Athenian::JIRAEpic.new(
   updated: null,
   work_began: null,
   resolved: null,
+  acknowledge_time: null,
   lead_time: null,
   life_time: null,
   reporter: null,
